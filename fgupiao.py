@@ -87,6 +87,8 @@ class GupiaoSpider(object):
         self.Data = []
         self.Date = time.strftime('%Y%m%d')
         self.Recordpath = 'E:\\pythonData\\股票数据\\'
+        if os.path.exists(self.Recordpath) is False:
+            os.makedirs(self.Recordpath)
         self.filename = 'Data' + self.Date
         self.limit = 800  # 设置开启N个线程
         self.session = requests.Session()
