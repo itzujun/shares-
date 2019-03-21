@@ -186,4 +186,3 @@ if __name__ == "__main__":
     se.send(title, context, path)
     etime = time.time()
     print("used: ", str(etime - stime))
-    pass
